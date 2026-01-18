@@ -10,4 +10,6 @@ app.get('/health', (req,res)=>{
     res.json({status: 'OK'});
 })
 
+app.use("/api/auth", require("./routes/authRoutes"));
+
 module.exports = app;
