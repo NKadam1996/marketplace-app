@@ -11,5 +11,6 @@ app.get('/health', (req,res)=>{
 })
 
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/test", require("./routes/testRoutes"));
 
 module.exports = app;
